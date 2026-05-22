@@ -1,0 +1,20 @@
+# Ignorar las carpetas ocultas de configuración de VS Code y Java
+.settings/
+.bin/
+.classpath
+.project
+.factorypath
+.DS_Store
+
+# Ignorar el POM reducido temporal de Maven por si acaso
+dependency-reduced-pom.xml
+
+# --- REGLAS PARA TARGET ---
+# 1. Ignorar el contenido interno, pero permitir el escaneo de la ruta raíz
+target/*
+
+# 2. Rescatar tu archivo JAR ejecutable
+!target/generador-codigo-barras-1.0.jar
+
+# 3. Mantener ignorado el JAR de respaldo original de Maven
+target/original-*.jar

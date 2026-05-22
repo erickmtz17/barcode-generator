@@ -15,7 +15,9 @@ import org.krysalis.barcode4j.impl.code128.Code128Bean;
 import org.krysalis.barcode4j.output.bitmap.BitmapCanvasProvider;
 
 public class App {
+
     public static void main(String[] args) {
+
         try {
             String texto = RandomStringUtils.randomNumeric(12);
             int dpi = 150;
@@ -49,9 +51,9 @@ public class App {
             ventana.add(etiquetaImagen, BorderLayout.CENTER);
             ventana.setLocationRelativeTo(null); // Centrar la ventana
             ventana.setVisible(true);
-
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
 }
